@@ -7,6 +7,7 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { InfoComponent } from './components/info/info.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InfoComponent } from './components/info/info.component';
     RegistroComponent,
     LoginComponent,
     ListadoComponent,
-    InfoComponent
+    InfoComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
