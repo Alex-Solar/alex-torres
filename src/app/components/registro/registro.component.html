@@ -1,82 +1,130 @@
-  <form class="row g-3">
-    <div class="col">
-      <label for="inputName" class="form-label">Name</label>
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+<h2 class="section-title" position="center">PERSON DATE</h2>
+<p> </p>
+<p> </p>
+<form class="row g-3">
+  <div class="row">
+    <div class="col-6">
+      <label for="validationFirstName" class="form-label">First name</label>
+      <input type="text" class="form-control is-valid" id="validationFirstName" placeholder="First name" value="Alex" required>
+      <div class="valid-feedback">
+        Good!
+      </div>
     </div>
-    <div class="col">
-      <label for="inputLastName" class="form-label">Last Name</label>
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+
+    <div class="col-6">
+      <label for="validationSecondName" class="form-label">Second name</label>
+      <input type="text" class="form-control is-valid" id="validationSecondName" placeholder="Second name" value="Francisco">
+      <div class="valid-feedback">
+        Good!
+      </div>
     </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+
+  </div>
+  
+  <div class="row">
+    <div class="col-6">
+      <label for="validationServerLastName1" class="form-label">Last name</label>
+      <input type="text" class="form-control is-valid" id="validationServerLastName1" value="Torres" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
     </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+
+    <div class="col-6">
+      <label for="validationServerLastName2" class="form-label">mother's last name</label>
+      <input type="text" class="form-control is-valid" id="validationServerLastName2" value="Morales" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
     </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <label for="validationServerinputEmail" class="col-sm-4 col-form-label">Email</label>
+      <input type="email" class="form-control is-invalid" id="validationServerinputEmail" >
+      <div id="validationServerinputEmailFeedback" class="invalid-feedback">
+        Please choose a Email.
+      </div>
     </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
+
+    <div class="col-1">
+      <label for="inputPhono" class="form-label">Phono</label>
+      <select id="inputPhono" class="form-select">
+      <option selected>(+56)</option>
+        <option>(+02)</option>
       </select>
     </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    
-  </form>
-  <form>
-    <div class="row mb-3">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3">
+
+    <div class="col-5">
+      <label for="validationServerNumPhono" class="form-label">Number</label>
+      <input type="text" class="form-control is-invalid" id="validationServerNumPhono" required>
+      <div id="validationServerNumPhonoFeedback" class="invalid-feedback">
+        Please choose a Number.
       </div>
     </div>
-    <div class="row mb-3">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3">
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <label for="validationServerCountry" class="form-label">Country</label>
+      <select class="form-select is-invalid" id="validationServerCountry" aria-describedby="validationServer04Feedback" required>
+        <option selected disabled value="">Choose...</option>
+        <option>CHILE</option>
+        <option>ARGENTINA</option>
+      </select>
+      <div id="validationServerCountryFeedback" class="invalid-feedback">
+        Please select a valid state.
       </div>
     </div>
-    <fieldset class="row mb-3">
-      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            First radio
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Second radio
-          </label>
-        </div>
-        <div class="form-check disabled">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-          <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
-          </label>
-        </div>
-      </div>
-    </fieldset>
-    <div class="row mb-3">
-      <div class="col-sm-10 offset-sm-2">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Example checkbox
-          </label>
-        </div>
+
+    <div class="col-4">
+      <label for="validationServerRegion" class="form-label">Region</label>
+      <select class="form-select is-invalid" id="validationServerRegion" aria-describedby="validationServer04Feedback" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Región Metropolitana</option>
+        <option>La Boca</option>
+      </select>
+      <div id="validationServerRegionFeedback" class="invalid-feedback">
+        Please select a valid state.
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
+
+    <div class="col-4">
+      <label for="validationServerCommune" class="form-label">Commune</label>
+      <select class="form-select is-invalid" id="validationServerCommune" aria-describedby="validationServer04Feedback" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Santiago</option>
+        <option>Argentina</option>
+      </select>
+      <div id="validationServerCommuneFeedback" class="invalid-feedback">
+        Please select a valid Commune.
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-4">
+      <label for="validationServerinputEmail" class="col-sm-4 col-form-label">Email</label>
+      <input type="email" class="form-control is-invalid" id="validationServerinputEmail" >
+      <div id="validationServerinputEmailFeedback" class="invalid-feedback">
+        Please choose a Email.
+      </div>
+    </div>
+
+    <div class="col-4">
+      <label for="inputPassword1" class="col-sm-2 col-form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword1">
+    </div>
+
+    <div class="col-4">
+      <label for="inputPassword2" class="col-sm-2 col-form-label">Repeat_Password</label>
+      <input type="password" class="form-control" id="inputPassword2">
+    </div>
+  </div>
+
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" aria-disabled="true" type="button">ADD</button>
+  </div>
+
+</form>
